@@ -30,3 +30,7 @@ Each project will have its own repo with an architecture diagram, setup steps, d
 | Week | Milestone |
 |------|-----------|
 | 1 | AWS account secured (MFA, IAM Identity Center, budgets), AWS CLI configured, this repo created |
+| 2 | |
+| 3 | Serverless visitor counter (DynamoDB, Lambda, API Gateway) with unit tests. CloudFront access pending AWS review. |
+
+
