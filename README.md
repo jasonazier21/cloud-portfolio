@@ -29,8 +29,8 @@ Each project will have its own repo with an architecture diagram, setup steps, d
 
 | Week | Milestone |
 |------|-----------|
-| 1 | AWS account secured (MFA, IAM Identity Center, budgets), AWS CLI configured, this repo created |
-| 2 | |
-| 3 | Serverless visitor counter (DynamoDB, Lambda, API Gateway) with unit tests. CloudFront access pending AWS review. |
+| 1 | AWS account secured (root MFA, IAM admin user with MFA, budget alerts), AWS CLI configured with short-lived `aws login` credentials, this repo created |
+| 2 | Resume website built (HTML/CSS/JS) and uploaded to a private S3 bucket. CloudFront setup blocked pending AWS account verification |
+| 3 | Serverless visitor counter (DynamoDB, Lambda, API Gateway) with unit tests. CloudFront access pending AWS review |
 
 
