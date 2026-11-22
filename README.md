@@ -1,6 +1,6 @@
 # ☁️ Cloud Portfolio
 
-Hands-on AWS projects built while preparing for a cloud internship. The first project is running; I'm now rebuilding it as **Terraform** and adding **GitHub Actions** deployments, and every project is designed to follow the same approach.
+Hands-on AWS projects built while preparing for a cloud internship. Two projects are running on AWS; I'm next rebuilding them as **Terraform** and adding **GitHub Actions** deployments, and every project is designed to follow the same approach.
 
 **Author:** BSIT (Web & Mobile Apps), 4th year · Python · JavaScript · Kotlin · Swift
 **Certifications:**
@@ -15,7 +15,7 @@ Hands-on AWS projects built while preparing for a cloud internship. The first pr
 |---|---------|-------|--------|
 | 1 | **Cloud Resume Challenge**: serverless resume site with a live visitor counter. [Live site](https://jasonazier21.github.io/resume-frontend/) · [Frontend repo](https://github.com/jasonazier21/resume-frontend) · [Backend repo](https://github.com/jasonazier21/resume-backend) | **Built:** Lambda (Python) with unit tests, API Gateway HTTP API, DynamoDB, IAM least privilege, CORS. **Next:** S3 + CloudFront, Terraform, GitHub Actions (OIDC) | 🚧 In progress |
 | 2 | **Containerized web app with CI/CD**: Dockerized app deployed on every push to `main` | Docker, ECR, ECS Fargate, ALB, RDS/DynamoDB, CloudWatch, Terraform | 🔜 Planned |
-| 3 | **PH Typhoon/Weather Alert System**: event-driven alerts + Kotlin Android companion app | EventBridge Scheduler, Lambda, DynamoDB, SNS, API Gateway, Terraform, Kotlin | 🔜 Planned |
+| 3 | **PH Typhoon/Weather Alert System**: scheduled weather checks with email alerts. [Repo](https://github.com/jasonazier21/typhoon-alert-backend) | **Built:** EventBridge Scheduler (every 30 min), Lambda (Python) with 9 unit tests, DynamoDB with TTL, SNS email alerts with cooldown, IAM least privilege. **Next:** Terraform, GitHub Actions, Kotlin Android companion app | ✅ Deployed, running |
 
 Each project has its own repo with an architecture diagram, setup steps, design decisions and a cost estimate.
 
@@ -37,3 +37,4 @@ Each project has its own repo with an architecture diagram, setup steps, design 
 | 2 | Resume website built (HTML/CSS/JS) and uploaded to a private S3 bucket. CloudFront setup blocked pending AWS account verification |
 | 3 | Serverless visitor counter (DynamoDB, Lambda, API Gateway) with unit tests. CloudFront access pending AWS review |
 | 3+ | Resume site live over HTTPS on GitHub Pages (temporary hosting), architecture diagram and write-up added |
+| 4 | PH typhoon alert system deployed: EventBridge → Lambda → Open-Meteo → DynamoDB → SNS email, tested end to end with a forced alert |
